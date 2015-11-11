@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/andrewshaffer/.nvm/versions/io.js/v1.7.1/bin/iojs',
+1 verbose cli   '/Users/andrewshaffer/.nvm/versions/io.js/v1.7.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@2.7.6
+3 info using node@v1.7.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/andrewshaffer/weo/current-version',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/andrewshaffer/.npm/@themang/current-version/0.1.1/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/andrewshaffer/.npm/@themang/current-version/0.1.1/package.tgz',
+9 verbose tar pack   '/Users/andrewshaffer/weo/current-version' ]
+10 verbose tarball /Users/andrewshaffer/.npm/@themang/current-version/0.1.1/package.tgz
+11 verbose folder /Users/andrewshaffer/weo/current-version
+12 info prepublish @themang/current-version@0.1.1
+13 verbose addLocalTarball adding from inside cache /Users/andrewshaffer/.npm/@themang/current-version/0.1.1/package.tgz
+14 silly cache afterAdd @themang/current-version@0.1.1
+15 verbose afterAdd /Users/andrewshaffer/.npm/@themang/current-version/0.1.1/package/package.json not in flight; writing
+16 verbose afterAdd /Users/andrewshaffer/.npm/@themang/current-version/0.1.1/package/package.json written
+17 silly publish { name: '@themang/current-version',
+17 silly publish   description: 'Get your own current version',
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git://github.com/weo-edu/current-version.git' },
+17 silly publish   version: '0.1.1',
+17 silly publish   license: 'MIT',
+17 silly publish   main: 'lib/index.js',
+17 silly publish   dependencies: {},
+17 silly publish   devDependencies: { mocha: '2.x', standard: '^4.0.0' },
+17 silly publish   engines: { node: '~0.10.38', npm: '~2.9.0' },
+17 silly publish   readme: '\n# current-version\n\n[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)\n\nGet your own current version\n\n## Installation\n\n    $ npm install @themang/current-version\n\n## License\n\nThe MIT License\n\nCopyright &copy; 2015, Weo.io &lt;info@weo.io&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+17 silly publish   readmeFilename: 'Readme.md',
+17 silly publish   bugs: { url: 'https://github.com/weo-edu/current-version/issues' },
+17 silly publish   homepage: 'https://github.com/weo-edu/current-version',
+17 silly publish   _id: '@themang/current-version@0.1.1',
+17 silly publish   scripts: {},
+17 silly publish   _shasum: '1db15bb22785266adff57e00abf1c16aac3e0bb4',
+17 silly publish   _from: '.' }
+18 silly mapToRegistry name @themang/current-version
+19 silly mapToRegistry scope (from package name) @themang
+20 verbose mapToRegistry no registry URL found in name for scope @themang
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/@themang%2fcurrent-version
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/andrewshaffer/.npm/@themang/current-version/0.1.1/package.tgz
+26 verbose request uri https://registry.npmjs.org/@themang%2fcurrent-version
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 12:34:14
+29 verbose request using bearer token for auth
+30 verbose request id d07618057179bd3b
+31 http request PUT https://registry.npmjs.org/@themang%2fcurrent-version
+32 http 403 https://registry.npmjs.org/@themang%2fcurrent-version
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=0',
+33 verbose headers   'content-length': '70',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Wed, 11 Nov 2015 20:34:14 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-lax1426-LAX',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1447274054.535923,VS0,VE223' }
+34 verbose request invalidating /Users/andrewshaffer/.npm/registry.npmjs.org/_40themang_252fcurrent-version on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: You do not have permission to modify this package or scope : @themang%2fcurrent-version
+36 verbose stack     at CachingRegistryClient.<anonymous> (/Users/andrewshaffer/.nvm/versions/io.js/v1.7.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+36 verbose stack     at Request._callback (/Users/andrewshaffer/.nvm/versions/io.js/v1.7.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+36 verbose stack     at Request.self.callback (/Users/andrewshaffer/.nvm/versions/io.js/v1.7.1/lib/node_modules/npm/node_modules/request/request.js:360:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at Request.<anonymous> (/Users/andrewshaffer/.nvm/versions/io.js/v1.7.1/lib/node_modules/npm/node_modules/request/request.js:1202:14)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:166:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/Users/andrewshaffer/.nvm/versions/io.js/v1.7.1/lib/node_modules/npm/node_modules/request/request.js:1150:12)
+36 verbose stack     at emitNone (events.js:72:20)
+37 verbose statusCode 403
+38 verbose pkgid @themang%2fcurrent-version
+39 verbose cwd /Users/andrewshaffer/weo/current-version
+40 error Darwin 14.4.0
+41 error argv "/Users/andrewshaffer/.nvm/versions/io.js/v1.7.1/bin/iojs" "/Users/andrewshaffer/.nvm/versions/io.js/v1.7.1/bin/npm" "publish"
+42 error node v1.7.1
+43 error npm  v2.7.6
+44 error code E403
+45 error You do not have permission to modify this package or scope : @themang%2fcurrent-version
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
