@@ -2,7 +2,7 @@
   "name": "current-version",
   "description": "Get your own current version",
   "repository": "git://github.com/weo-edu/current-version.git",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {},
