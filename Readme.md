@@ -7,7 +7,11 @@ Get your own current version
 
 ## Installation
 
-    $ npm install @themang/current-version
+    $ npm install current-version
+
+## Usage
+
+`version() -> 0.0.1`
 
 ## License
 
