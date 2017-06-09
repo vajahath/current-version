@@ -5,9 +5,16 @@
 	"version": "0.1.4",
 	"license": "MIT",
 	"main": "src/index.js",
-	"dependencies": {},
+	"scripts": {
+		"test": "node_modules/.bin/xo --fix && node_modules/.bin/mocha tests/"
+	},
+	"dependencies": {
+		"app-root-path": "^2.0.1",
+		"lme": "^1.5.3"
+	},
 	"devDependencies": {
-		"mocha": "2.x",
-		"standard": "^4.0.0"
+		"chai": "^4.0.2",
+		"mocha": "^3.4.2",
+		"xo": "^0.18.2"
 	}
 }
