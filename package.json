@@ -1,13 +1,31 @@
 {
 	"name": "current-version",
-	"description": "Get your own current version",
-	"repository": "git://github.com/weo-edu/current-version.git",
-	"version": "0.1.4",
+	"description": "Get your own current version licence and other details",
+	"version": "1.0.0",
 	"license": "MIT",
 	"main": "src/index.js",
 	"scripts": {
 		"test": "node_modules/.bin/xo --fix && node_modules/.bin/mocha tests/"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/weo-edu/current-version.git"
+	},
+	"bugs": {
+		"url": "https://github.com/weo-edu/current-version/issues"
+	},
+	"homepage": "https://github.com/weo-edu/current-version#readme",
+	"author": "Andrew Shaffer (https://github.com/ashaffer)",
+	"keywords": [
+		"current",
+		"current-version",
+		"self",
+		"package.json",
+		"about-me",
+		"my-self",
+		"know your self",
+		"package-details"
+	],
 	"dependencies": {
 		"app-root-path": "^2.0.1",
 		"lme": "^1.5.3"
@@ -16,5 +34,8 @@
 		"chai": "^4.0.2",
 		"mocha": "^3.4.2",
 		"xo": "^0.18.2"
-	}
+	},
+	"contributors": [
+		"Vajahath Ahmed <vajuoff.1@gmail.com> (https://github.com/vajahath)"
+	]
 }
