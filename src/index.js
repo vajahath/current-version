@@ -1,16 +1,29 @@
 'use strict';
 
-const pull = require('app-root-path').require;
+const rootPath = require('app-root-path');
 const lme = require('lme');
 
 let thisPackage = {};
 
-module.exports = () => {
-	try {
-		thisPackage = pull('package');
-	} catch (err) {
-		lme.e('No package.json file found in application root');
-	}
+try {
+    thisPackage = rootPath.require('package');
+} catch (err) {
+    lme.e('No package.json file found in root: ' + rootPath);
+    throw err;
+}
 
-	return thisPackage;
+
+module.exports = (packageName) => {
+    // for cli tools
+    if (packageName) return findCliVersion(packageName);
+    // for normal packages
+    return findPackageVersion();
 };
+
+function findCliVersion(packageName) {
+    return thisPackage.dependencies[packageName];
+}
+
+function findPackageVersion() {
+    return thisPackage.version;
+}
